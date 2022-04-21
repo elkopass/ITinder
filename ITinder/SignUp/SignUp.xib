@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUp" customModule="ITinder" customModuleProvider="target">
+            <connections>
+                <outlet property="email" destination="HF1-L0-6Yf" id="B3Y-4C-tpf"/>
+                <outlet property="password" destination="9p7-46-nrI" id="qPS-rn-i77"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HF1-L0-6Yf" customClass="DSTextField" customModule="ITinder" customModuleProvider="target">
+                    <rect key="frame" x="16" y="228" width="382" height="56"/>
+                    <color key="backgroundColor" name="TxFieldBackground"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="qz8-zL-aWi"/>
+                    </constraints>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="valueRequired" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="expression">
+                            <string key="value">(?:[a-zA-Z0-9!#$%\&amp;‘*+/=?\^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%\&amp;'*+/=?\^_`{|}~-]+)*|\"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])</string>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="mistake" value="Wrong email"/>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ITindr" translatesAutoresizingMaskIntoConstraints="NO" id="t8Y-zi-UiO">
+                    <rect key="frame" x="145.5" y="89" width="123" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="123" id="AGh-tO-F3L"/>
+                        <constraint firstAttribute="height" constant="35" id="bKi-P0-yqU"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регистрация" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wH9-k5-chN">
+                    <rect key="frame" x="16" y="174" width="151.5" height="29"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <color key="textColor" name="PinkColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Пароль" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9p7-46-nrI" customClass="DSTextField" customModule="ITinder" customModuleProvider="target">
+                    <rect key="frame" x="16" y="309" width="382" height="56"/>
+                    <color key="backgroundColor" name="TxFieldBackground"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="qm6-YA-maa"/>
+                    </constraints>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="expression" value="^([a-zA-Z0-9!@#$%^&amp;+/=?_`'{|}~\-,;\\.\(\)\:\[\]]){8,100}$"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="mistake" value="Wrong password"/>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Повторите пароль" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y8a-MP-zNT" customClass="DSTextField" customModule="ITinder" customModuleProvider="target">
+                    <rect key="frame" x="16" y="390" width="382" height="56"/>
+                    <color key="backgroundColor" name="TxFieldBackground"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="iTp-aM-I62"/>
+                    </constraints>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="expression" value="^([a-zA-Z0-9!@#$%^&amp;+/=?_`'{|}~\-,;\\.\(\)\:\[\]]){8,100}$"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="mistake" value="Wrong password"/>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XK9-c3-4pC" customClass="GradientView" customModule="ITinder" customModuleProvider="target">
+                    <rect key="frame" x="16" y="684" width="382" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="kW3-Mp-IMp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <state key="normal" title="Зарегистрироваться"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="MoveToAboutMySelfScreen:" destination="-1" eventType="touchUpInside" id="vhc-op-pf1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqy-HV-UX0" customClass="CustomButton" customModule="ITinder" customModuleProvider="target">
+                    <rect key="frame" x="16" y="756" width="382" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="GPV-n7-YeH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <state key="normal" title="Назад"/>
+                    <connections>
+                        <action selector="MoveBack:" destination="-1" eventType="touchUpInside" id="WTZ-L8-erw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="t8Y-zi-UiO" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="3x9-qz-CNE"/>
+                <constraint firstItem="Y8a-MP-zNT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="9Mm-el-jXO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XK9-c3-4pC" secondAttribute="trailing" constant="16" id="H9D-6n-BQo"/>
+                <constraint firstItem="HF1-L0-6Yf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="KVy-8D-2RZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HF1-L0-6Yf" secondAttribute="trailing" constant="16" id="PDo-ix-spI"/>
+                <constraint firstItem="XK9-c3-4pC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="U4Z-2Q-QH9"/>
+                <constraint firstItem="Y8a-MP-zNT" firstAttribute="top" secondItem="9p7-46-nrI" secondAttribute="bottom" constant="25" id="Wp7-XP-ynA"/>
+                <constraint firstItem="9p7-46-nrI" firstAttribute="top" secondItem="HF1-L0-6Yf" secondAttribute="bottom" constant="25" id="Yoe-2c-M3I"/>
+                <constraint firstItem="HF1-L0-6Yf" firstAttribute="top" secondItem="wH9-k5-chN" secondAttribute="bottom" constant="25" id="bNb-AK-QNG"/>
+                <constraint firstItem="wH9-k5-chN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="cUa-bT-Vmt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Y8a-MP-zNT" secondAttribute="trailing" constant="16" id="fSN-vN-Chn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hqy-HV-UX0" secondAttribute="trailing" constant="16" id="ggs-Q1-huW"/>
+                <constraint firstItem="hqy-HV-UX0" firstAttribute="top" secondItem="XK9-c3-4pC" secondAttribute="bottom" constant="16" id="m5F-1s-kDh"/>
+                <constraint firstItem="hqy-HV-UX0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="m8C-3O-JbB"/>
+                <constraint firstItem="9p7-46-nrI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="nG7-5k-1Gs"/>
+                <constraint firstItem="wH9-k5-chN" firstAttribute="top" secondItem="t8Y-zi-UiO" secondAttribute="bottom" constant="50" id="qjm-bE-Kxa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9p7-46-nrI" secondAttribute="trailing" constant="16" id="vux-te-GQo"/>
+                <constraint firstItem="t8Y-zi-UiO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="45" id="xPT-62-2S5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="hqy-HV-UX0" secondAttribute="bottom" constant="50" id="zTj-vh-aWK"/>
+            </constraints>
+            <point key="canvasLocation" x="141" y="87"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ITindr" width="165" height="47"/>
+        <namedColor name="PinkColor">
+            <color red="0.98000001907348633" green="0.075000002980232239" blue="0.67100000381469727" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TxFieldBackground">
+            <color red="0.95300000905990601" green="0.95300000905990601" blue="0.95300000905990601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

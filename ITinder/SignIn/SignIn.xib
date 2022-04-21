@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignIn" customModule="ITinder" customModuleProvider="target">
+            <connections>
+                <outlet property="email" destination="S1t-An-eVN" id="ZyX-86-ipK"/>
+                <outlet property="indicator" destination="TcD-Nx-KXG" id="op8-vf-Frk"/>
+                <outlet property="password" destination="DuB-ON-Cfx" id="tOW-hO-a0t"/>
+                <outlet property="view" destination="Iln-g0-i4Z" id="rjU-ZD-3Mp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Iln-g0-i4Z">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S1t-An-eVN" customClass="DSTextField" customModule="ITinder" customModuleProvider="target">
+                    <rect key="frame" x="16" y="228" width="382" height="56"/>
+                    <color key="backgroundColor" name="TxFieldBackground"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="YvQ-dy-UsD"/>
+                    </constraints>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="expression">
+                            <string key="value">(?:[a-zA-Z0-9!#$%\&amp;‘*+/=?\^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%\&amp;'*+/=?\^_`{|}~-]+)*|\"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])</string>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="valueRequired" value="NO"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="mistake" value="Wrong email"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outletCollection property="validateDelegates" destination="M6x-tf-s4I" collectionClass="NSMutableArray" id="tIF-Tp-y2W"/>
+                    </connections>
+                </textField>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ITindr" translatesAutoresizingMaskIntoConstraints="NO" id="xIb-6B-DDC">
+                    <rect key="frame" x="145.5" y="89" width="123" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="RCF-PD-w9Y"/>
+                        <constraint firstAttribute="width" constant="123" id="vWJ-04-mDO"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Авторизация" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnD-EA-Tnb">
+                    <rect key="frame" x="16" y="174" width="155" height="29"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <color key="textColor" name="PinkColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Пароль" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DuB-ON-Cfx" customClass="DSTextField" customModule="ITinder" customModuleProvider="target">
+                    <rect key="frame" x="16" y="309" width="382" height="56"/>
+                    <color key="backgroundColor" name="TxFieldBackground"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="WrB-EW-8Xi"/>
+                    </constraints>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderMistakeColor">
+                            <color key="value" systemColor="systemRedColor"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderFilledColor">
+                            <color key="value" systemColor="systemGreenColor"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="expression" value="^([a-zA-Z0-9!@#$%^&amp;+/=?_`'{|}~\-,;\\.\(\)\:\[\]]){8,100}$"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="mistake" value="Wrong password"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="valueRequired" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outletCollection property="validateDelegates" destination="M6x-tf-s4I" collectionClass="NSMutableArray" id="MkV-E1-vIF"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rfo-9F-K0H" customClass="GradientView" customModule="ITinder" customModuleProvider="target">
+                    <rect key="frame" x="16" y="684" width="382" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="JR7-bz-Ldp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <state key="normal" title="Войти"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="MoveToAboutMySelfScreen:" destination="-1" eventType="touchUpInside" id="Efp-aC-vyJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPY-rT-fAa" customClass="CustomButton" customModule="ITinder" customModuleProvider="target">
+                    <rect key="frame" x="16" y="756" width="382" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="D2f-wF-wnY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <state key="normal" title="Назад"/>
+                    <connections>
+                        <action selector="MoveBack:" destination="-1" eventType="touchUpInside" id="6ta-Pv-f2y"/>
+                    </connections>
+                </button>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="TcD-Nx-KXG">
+                    <rect key="frame" x="182" y="428" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="jhf-GS-MSp"/>
+                        <constraint firstAttribute="height" constant="50" id="vY7-NI-HNa"/>
+                    </constraints>
+                    <color key="color" name="PurpleColor"/>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="k7L-ye-77y"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="TcD-Nx-KXG" firstAttribute="centerY" secondItem="k7L-ye-77y" secondAttribute="centerY" id="2uO-tY-ZQJ"/>
+                <constraint firstItem="xIb-6B-DDC" firstAttribute="centerX" secondItem="k7L-ye-77y" secondAttribute="centerX" id="3Qp-VA-71o"/>
+                <constraint firstItem="k7L-ye-77y" firstAttribute="trailing" secondItem="fPY-rT-fAa" secondAttribute="trailing" constant="16" id="9Oy-a8-zbx"/>
+                <constraint firstItem="fPY-rT-fAa" firstAttribute="top" secondItem="Rfo-9F-K0H" secondAttribute="bottom" constant="16" id="Etn-Rg-Q5c"/>
+                <constraint firstItem="S1t-An-eVN" firstAttribute="leading" secondItem="k7L-ye-77y" secondAttribute="leading" constant="16" id="OAD-gc-bja"/>
+                <constraint firstItem="Rfo-9F-K0H" firstAttribute="leading" secondItem="k7L-ye-77y" secondAttribute="leading" constant="16" id="Ru8-Tt-DeG"/>
+                <constraint firstItem="k7L-ye-77y" firstAttribute="bottom" secondItem="fPY-rT-fAa" secondAttribute="bottom" constant="50" id="aMt-e8-JRq"/>
+                <constraint firstItem="DuB-ON-Cfx" firstAttribute="top" secondItem="S1t-An-eVN" secondAttribute="bottom" constant="25" id="ay0-YB-7XI"/>
+                <constraint firstItem="DuB-ON-Cfx" firstAttribute="leading" secondItem="k7L-ye-77y" secondAttribute="leading" constant="16" id="bQe-sM-UqX"/>
+                <constraint firstItem="qnD-EA-Tnb" firstAttribute="top" secondItem="xIb-6B-DDC" secondAttribute="bottom" constant="50" id="c7B-4V-sQC"/>
+                <constraint firstItem="S1t-An-eVN" firstAttribute="top" secondItem="qnD-EA-Tnb" secondAttribute="bottom" constant="25" id="dLo-Lg-YXZ"/>
+                <constraint firstItem="TcD-Nx-KXG" firstAttribute="centerX" secondItem="k7L-ye-77y" secondAttribute="centerX" id="jen-sD-AVL"/>
+                <constraint firstItem="k7L-ye-77y" firstAttribute="trailing" secondItem="DuB-ON-Cfx" secondAttribute="trailing" constant="16" id="lQ4-UE-e25"/>
+                <constraint firstItem="k7L-ye-77y" firstAttribute="trailing" secondItem="S1t-An-eVN" secondAttribute="trailing" constant="16" id="obD-Gs-MIS"/>
+                <constraint firstItem="fPY-rT-fAa" firstAttribute="leading" secondItem="k7L-ye-77y" secondAttribute="leading" constant="16" id="oj2-5e-owe"/>
+                <constraint firstItem="qnD-EA-Tnb" firstAttribute="leading" secondItem="k7L-ye-77y" secondAttribute="leading" constant="16" id="v0o-4z-0Ce"/>
+                <constraint firstItem="k7L-ye-77y" firstAttribute="trailing" secondItem="Rfo-9F-K0H" secondAttribute="trailing" constant="16" id="ww7-WH-CEF"/>
+                <constraint firstItem="xIb-6B-DDC" firstAttribute="top" secondItem="k7L-ye-77y" secondAttribute="top" constant="45" id="zQW-gS-1gU"/>
+            </constraints>
+            <point key="canvasLocation" x="141" y="87"/>
+        </view>
+        <customObject id="M6x-tf-s4I" customClass="DSValidationManager" customModule="ITinder" customModuleProvider="target">
+            <connections>
+                <outletCollection property="verifiedControls" destination="S1t-An-eVN" collectionClass="NSMutableArray" id="Jku-ln-yMy"/>
+                <outletCollection property="verifiedControls" destination="DuB-ON-Cfx" collectionClass="NSMutableArray" id="5Zn-uM-vc6"/>
+                <outletCollection property="managedControls" destination="Rfo-9F-K0H" collectionClass="NSMutableArray" id="t7N-BR-qlz"/>
+            </connections>
+        </customObject>
+    </objects>
+    <resources>
+        <image name="ITindr" width="165" height="47"/>
+        <namedColor name="PinkColor">
+            <color red="0.98000001907348633" green="0.075000002980232239" blue="0.67100000381469727" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PurpleColor">
+            <color red="0.9100000262260437" green="0.075000002980232239" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TxFieldBackground">
+            <color red="0.95300000905990601" green="0.95300000905990601" blue="0.95300000905990601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
